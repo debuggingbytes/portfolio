@@ -41,16 +41,8 @@
 </head>
 
 <body>
-  <div class="social-links">
-    <a href="https://www.linkedin.com/in/kris-cartmell/" target="_blank"><i
-        class="fa-brands fa-linkedin fa-2xl"></i></a>
-    <a href="https://github.com/debuggingbytes" target="_blank"><i class="fa-brands fa-github fa-2xl"></i></a>
-    <div class="text-center">
-      <hr style="width: 3px; height: 100px; display: inline-block; background-color:#09d4d9;">
-    </div>
-  </div>
   <header>
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top">
       <div class="container-fluid">
         <a class="navbar-brand" href="#"><img src="./files/images/icon.png" class="img-fluid" style="width: 38px;"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mobile">
@@ -59,8 +51,8 @@
         <div class="collapse navbar-collapse ms-auto order-3" id="mobile">
           <div class="navbar-nav ms-auto text-center">
             <a class="nav-link" href="#portfolio">Portfolio</a>
-            <a class="nav-link" href="#">About</a>
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="#about">About</a>
+            <a class="nav-link" href="#contact">Contact</a>
             <a class="nav-link" href="#">Resume</a>
           </div>
         </div>
@@ -79,67 +71,148 @@
     </section>
     <section id="portfolio">
       <div class="container">
-        <h1>Portfolio</h1>
+        <h1>Portfolio
+          <hr>
+        </h1>
         <p>Here are a few of my projects, feel free to view them and look at the source code</p>
-        <div class="row">
-          <!--ToDo: make profile items responsive, they look like shit on mobile -->
-          <div class="portfolio-item-right">
-            <img src="files/portfolio/admin-panel.png" class="img-fluid">
-            <div class="content">
+        <!-- Portfolio #1 START-->
+        <div class="row d-md-flex justify-content-center align-items-center my-5">
+          <div class="col-md">
+            <div class="portfolio-item position-relative">
               <h3>Admin Dashboard</h3>
-              <p>This project is the dashboard I use for my freelance website. It follows all aspects of CRUD, has a
-                time management system, client information, and invoicing system</p>
+              <p class="p-content">This project is the dashboard I currently use for my own freelance website. It
+                follows all aspects of
+                CRUD, has a time management system, invoicing system and client information</p>
               <div class="languages">
                 <ul>
                   <li>Bootstrap</li>
                   <li>jQuery</li>
                   <li>PHP</li>
                   <li>MySQL</li>
-                </ul>
-              </div>
-              <div class="portfolio-links">
-                <ul>
-                  <li><a href='http://admin.debuggingbytes.com' target="_blank"><i class="fa-solid fa-link fa-xl"
-                        title="Go to website"></i></a></li>
-                  <li><a href='#'><i class="fa-solid fa-code fa-xl" title="View Code"></i></a></li>
                 </ul>
               </div>
             </div>
           </div>
-          <div class="portfolio-item-left">
-            <img src="files/portfolio/debuggingbytes.png" class="img-fluid">
-            <div class="content">
-              <h3>DebuggingBytes</h3>
-              <p>My freelance website to designed to provide affordable web packages to potential clients. </p>
-              <div class="languages">
-                <ul>
-                  <li>Bootstrap</li>
-                  <li>jQuery</li>
-                  <li>PHP</li>
-                  <li>MySQL</li>
-                </ul>
-              </div>
-              <div class="portfolio-links">
-                <ul>
-                  <li><a href='http://www.debuggingbytes.com' target="_blank"><i class="fa-solid fa-link fa-xl"
-                        title="Go to website"></i></a></li>
-                  <li><a href='#'><i class="fa-solid fa-code fa-xl" title="View Code"></i></a></li>
-                </ul>
-              </div>
+          <div class="col-md portfolio-img position-relative">
+            <img src="./files/portfolio/admin-panel.png" class="img-fluid" alt="Admin Panel">
+            <div class="portfolio-links">
+              <ul>
+                <li><a href='http://www.debuggingbytes.com' target="_blank"><i class="fa-solid fa-link fa-xl"
+                      title="Go to website"></i></a></li>
+                <li><a href='#'><i class="fa-solid fa-code fa-xl" title="View Code"></i></a></li>
+              </ul>
             </div>
           </div>
         </div>
+        <!-- Portfolio #1 END -->
+        <!-- Portfolio #2 START-->
+        <div class="row d-md-flex justify-content-center align-items-center my-5">
+          <div class="col-md">
+            <div class="portfolio-item position-relative">
+              <h3>DebuggingBytes</h3>
+              <p class="p-content">My freelance website to designed to provide affordable web packages to potential
+                clients. Website has contact form with spam honey pot.</p>
+              <div class="languages">
+                <ul>
+                  <li>Bootstrap</li>
+                  <li>jQuery</li>
+                  <li>aJax</li>
+                  <li>PHP</li>
+                  <li>MySQL</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md portfolio-img position-relative">
+            <img src="files/portfolio/debuggingbytes.png" class="img-fluid" alt="DebuggingBytes">
+            <div class="portfolio-links">
+              <ul>
+                <li><a href='http://www.debuggingbytes.com' target="_blank"><i class="fa-solid fa-link fa-xl"
+                      title="Go to website"></i></a></li>
+                <li><a href='#'><i class="fa-solid fa-code fa-xl" title="View Code"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- Portfolio #2 END -->
+        <!-- Portfolio #3 START-->
+        <div class="row d-md-flex justify-content-center align-items-center my-5">
+          <div class="col-md">
+            <div class="portfolio-item position-relative">
+              <h3>Alberta Crane Service Ltd.</h3>
+              <p class="p-content">This project was created for a crane sales broker. Simple design which show cased
+                which equipment was
+                available, pulling information from CraneNetwork..</p>
+              <div class="languages">
+                <ul>
+                  <li>Bootstrap</li>
+                  <li>jQuery</li>
+                  <li>aJax</li>
+                  <li>PHP</li>
+                  <li>MySQL</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md portfolio-img position-relative">
+            <img src="files/portfolio/alberta-crane-service-ltd.png" class="img-fluid" alt="Alberta Crane Service Ltd">
+            <div class="portfolio-links">
+              <ul>
+                <li><a href='http://www.albertacraneservice.com' target="_blank"><i class="fa-solid fa-link fa-xl"
+                      title="Go to website"></i></a></li>
+                <li><a href='#'><i class="fa-solid fa-code fa-xl" title="View Code"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- Portfolio #3 END -->
       </div>
     </section>
     <section id="about">
       <div class="container">
-        <h1>About Me</h1>
+        <h1>About Me
+          <hr>
+        </h1>
+        <p>I am a full stack developer with a passion of learning new languages and thinking outside the box. I am
+          motivated and self starting, and work well as a team or individual. Currently I am learning the <span
+            class='color'>Tailwind</span> and <span class='color'>Laravel</span> frameworks.</p>
+        <h3>Technical Skills</h3>
+        <div class="languages">
+          <ul>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>Javascript</li>
+            <li>jQuery</li>
+            <li>ReactJS</li>
+            <li>NodeJS</li>
+            <li>PHP</li>
+            <li>MySQL</li>
+            <li>MongoDB</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <div class="container">
+        <h1>Contact
+          <hr>
+        </h1>
+        <p class="p-2">You've made it this far, why don't you say hello and I'll get back to you as soon as possible.
+        </p>
       </div>
     </section>
   </main>
   <footer>
 
   </footer>
+  <div class="social-links">
+    <a href="https://www.linkedin.com/in/kris-cartmell/" target="_blank"><i
+        class="fa-brands fa-linkedin fa-2xl"></i></a>
+    <a href="https://github.com/debuggingbytes" target="_blank"><i class="fa-brands fa-github fa-2xl"></i></a>
+    <div class="text-center">
+      <hr style="width: 3px; height: 100px; display: inline-block; background-color:#09d4d9;">
+    </div>
+  </div>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
   integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
