@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		// let counter = class makeCounter {
+		// 	constructor(i){
+		// 		if(i = ""){
+		// 			this.val = 0;
+		// 		}
+		// 		else{
+		// 			this.val = i;
+		// 		}
+		// 	}
+
+		// 	increment (){
+		// 		this.val = this.val++
+		// 		console.log(this.val);
+		// 		return this.val
+		// 	}
+		// 	decrement(){
+		// 		this.val = this.val--;
+		// 		console.log(this.val);
+		// 		return this.val
+		// 	}
+		// }
+		// counter.increment();
+		// console.log(this.val)
+		
+		// class makeCounter {
+		// 	constructor(i){
+		// 		if (typeof i === 'undefined' || i === null){
+		// 			i = 0;
+		// 			this.val = i;
+		// 		}
+		// 		else
+		// 		{
+		// 			this.val = i;
+		// 		}
+				
+		// 		this.value(this.val);
+		// 	};
+		// 	value() {				
+		// 		 return this.val;
+		// 	}
+		//  	up () {
+		// 		this.val = ++this.val;
+		// 		return this.value(this.val);
+		// 	};
+		// 	down (){
+		// 		this.val = --this.val;
+		// 		return this.value(this.val)
+		// 	};
+		// }
+		
+		// var counter = new makeCounter();
+		// console.log(counter);
+
+		// var counter2 = new makeCounter(4);
+		// console.log (counter2);
+		
+		// console.log(counter2.up())
+		// console.log(counter2.down())
+		// console.log(counter2.up())
+
+		// new stuff updates the array
+// Array increase / decrease based off if even or odd
+// Using my IDE to test script. --
+
+
+//create function to handle request
+
+// new stuff updates the array
+function newStuff(array, n){
+    var i;
+    for (i =0; i < n; i++){
+        //writes new value for loop
+        document.write(array[i] + " ");
+    }
+}
+
+// // do stuff handles the array
+// function doStuff(array, n){
+//     var i;
+//     //start loop for how many array values we have
+//     for(i = 0; i < n; i++){
+//         //if array[value] is not divisable by 2, remove 1 to its value
+//         if (array[i] % 2 ){
+//             array[i]--;
+//         }
+//         else
+//         {
+//             // array is not divisible by 2, so its even. add 1 from value
+//             array[i]++;
+//         }
+//         newStuff(array, n);
+//     }// end loop
+// }
+
+// var array = [10,7, 14, 5, 8, 1];
+// var n = array.length;
+// doStuff(array, n);
+// console.log(array)
+// doStuff(array, n);
+// console.log(array)
+
+// Create out function 'minArgs'
+
+function minArgs(val1, val2){
+	a_val1 = val1;
+	a_val2 = val2;
+	if(a_val1 = Array.isArray(val1)){
+		a_val1 = val1;
+		console.log(a_val1)
+		var i;
+		var n = a_val1.length;
+		for(i = 0; i < n; i++){
+
+	        var check = a_val1[i];
+	        if(a_val1[i] > check){
+	            check = a_val1[i];
+	        }
+			console.log(check)
+			val1 = check;
+			return val1;
+	    }
+	}
+	else if (a_val2 = Array.isArray(val2)){
+		a_val2 = val2;
+		// console.log(a_val2)
+		var i;
+		var check;
+		var n = a_val2.length;
+		
+		for(i = 0; a_val2[i] < n; i++){
+			console.log(a_val2[i])
+	    //    check = a_val2[i];
+		// 	// console.log(check)
+	    //     if(a_val1[i] > check){
+	    //         check = a_val1[i];
+		// 		// console.log(check)
+	    //     }
+		// 	val2 = check2;
+		// 	return val2;
+	    }
+	}
+    if (val1 > val2){
+		return val1;
+	}
+	else
+	{
+		return val2;
+	}
+}
+	var foo = minArgs(20, 100);
+	console.log(foo);
+
+	var duck = [5,40,-6,800];
+	var foo = minArgs(8, duck)
+	// console.log(foo)
+	</script>
+</body>
+</html>
