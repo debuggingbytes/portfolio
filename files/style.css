@@ -307,3 +307,40 @@ p {
 #contact {
   min-height: 30vh;
 }
+
+form {
+  color: #09d4d9;
+}
+.form-body {
+  padding: 5px;
+  margin-top: 5vh;
+  margin: 0px auto;
+  width: 75%;
+}
+
+textarea {
+  margin: 15px 0;
+}
+.form-body button {
+  width: 150px;
+  background: #ff7824;
+  padding: 13px;
+  color: #141e30; /* fallback for old browsers */
+  transition: ease-in-out 0.5s;
+  letter-spacing: 3px;
+}
+.form-body button:hover {
+  transition: ease-in-out 0.5s;
+  width: 150px;
+  background: #fd6100;
+  color: #e7e7e7; /* fallback for old browsers */
+}
+
+footer {
+  width: 100%;
+  min-height: 15vh;
+  background: #0e0f0f;
+  border-top: 1.5px solid #fafafa;
+  margin-top: 50px;
+  color: #09d4d9;
+}
