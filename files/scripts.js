@@ -165,7 +165,7 @@ async function shrinkage() {
   } else {
     return false;
   }
-  console.log(myPromise)
+  //console.log(myPromise)
 }
 
 // Form Control
@@ -173,7 +173,7 @@ $('form').on('submit', function (e) {
   const name = document.querySelector("input[name='fName']");
   const email = document.querySelector("input[name='email']");
   const message = document.querySelector("textarea[name='message']");
-  console.log(name.value + " " + email.value + "  " + message.value);
+  // console.log(name.value + " " + email.value + "  " + message.value);
   e.preventDefault();
   $.ajax({
     url: './utils/sendMail.php',

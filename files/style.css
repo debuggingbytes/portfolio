@@ -282,6 +282,13 @@ p {
   font-family: 'changal';
   background: #141e30;
   border: solid 1px #ff7824;
+  transition: ease-in-out 0.9;
+  transform: scale(1);
+}
+#about .languages li:hover {
+  background: #1f3c74;
+  transition: ease-in-out 0.9;
+  transform: scale(1.1);
 }
 
 #contact {

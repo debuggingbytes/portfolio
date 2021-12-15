@@ -211,7 +211,7 @@
             <p id='message'></p>
           </div>
           <div class="form-body" id="contact_form">
-            <form id="contact-now">
+            <form id="contact-now" method="post" action="./utils/sendMail.php">
               <div class="form-floating mb-3">
                 <input type="text" name='fName' class="form-control" id="floatingInput" placeholder="John Smith">
                 <label for="floatingInput">Full Name</label>
@@ -226,7 +226,8 @@
                 <label for="floatingTextarea">Your Message</label>
               </div>
               <div class="form-floating text-center">
-                <button type='submit' class='btn' id="sendIt">Send <i class="fa-solid fa-paper-plane"></i></button>
+                <button type='submit' name='submit' value='submit' class='btn' id="sendIt">Send <i
+                    class="fa-solid fa-paper-plane"></i></button>
               </div>
             </form>
           </div>
