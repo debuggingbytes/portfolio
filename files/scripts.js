@@ -175,11 +175,16 @@ $('form').on('submit', function (e) {
   const message = document.querySelector("textarea[name='message']");
   // console.log(name.value + " " + email.value + "  " + message.value);
   e.preventDefault();
+  // console.log("Sending")
+  const formData = $('form').serialize();
+  console.log(formData);
   $.ajax({
     url: './utils/sendMail.php',
     type: 'POST',
-    data: $('form').serialize(),
-    success: function () {
+    data: formData,
+
+    success: function (data) {
+      const who = data;
       $("#contact_form").animate({
         opacity: 0
       }, 500);
@@ -187,6 +192,9 @@ $('form').on('submit', function (e) {
         $('#success').slideToggle(900, function () {
           $('#message').fadeIn(200, () => {
             $('#message').append("Successfully sent!")
+            if (who === "cf") {
+              $('#message').append("<div class='text-center'><img src='files/images/coderfoundry.jpg'><br> Thank you for the review </div>")
+            }
           })
           setTimeout(() => {
             $('#success').animate({
@@ -195,7 +203,7 @@ $('form').on('submit', function (e) {
           }, 3000)
 
         });
-      }, 600)
+      }, 1000)
 
       setTimeout(() => {
         name.value = "";
