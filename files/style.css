@@ -1,13 +1,3 @@
-@font-face {
-  font-family: 'changa';
-  src: url('./fonts/changa-bold.ttf');
-}
-
-@font-face {
-  font-family: 'changal';
-  src: url('./fonts/changa-light.ttf');
-}
-
 html {
   margin: 0;
   padding: 0;
@@ -19,6 +9,17 @@ body {
   background: #191919;
   color: #fff;
 }
+
+@font-face {
+  font-family: 'changa';
+  src: url('./fonts/changa-bold.ttf');
+}
+
+@font-face {
+  font-family: 'changal';
+  src: url('./fonts/changa-light.ttf');
+}
+
 p {
   font-family: 'changal';
 }
@@ -58,27 +59,6 @@ p {
   padding: 15px;
   margin-bottom: 25px;
   color: #09d4d9;
-}
-@media screen and (max-width: 500px) {
-  .social-links {
-    margin-left: 20px;
-  }
-  .social-links a {
-    display: block;
-    cursor: pointer;
-    padding: 2px;
-    color: #09d4d9;
-    transition: ease-in-out 0.5s;
-    font-size: 12px;
-  }
-  .social-links a:hover {
-    transition: ease-in-out 0.5s;
-    display: block;
-    cursor: pointer;
-    padding: 2px;
-    margin-bottom: 25px;
-    color: #09d4d9;
-  }
 }
 
 /*** HERO STYLES ***/
@@ -129,7 +109,6 @@ p {
   letter-spacing: 3px;
 }
 .callToAction button {
-  width: 150px;
   background: #ff7824;
   padding: 13px;
   color: #141e30; /* fallback for old browsers */
@@ -159,7 +138,7 @@ p {
   color: #09d4d9;
   font-family: 'changa';
   padding-bottom: 5px;
-  width: 400px;
+  max-width: 320px;
 }
 #portfolio hr {
   background: #09d4d9;
@@ -338,9 +317,46 @@ textarea {
 
 footer {
   width: 100%;
-  min-height: 15vh;
-  background: #0e0f0f;
-  border-top: 1.5px solid #fafafa;
+  min-height: 10vh;
   margin-top: 50px;
   color: #09d4d9;
+}
+
+/* RESPONSIVE CODE */
+
+@media screen and (max-width: 500px) {
+  .social-links {
+    margin-left: 20px;
+  }
+  .social-links a {
+    display: block;
+    cursor: pointer;
+    padding: 2px;
+    color: #09d4d9;
+    transition: ease-in-out 0.5s;
+    font-size: 15px;
+  }
+  .social-links a:hover {
+    transition: ease-in-out 0.5s;
+    display: block;
+    cursor: pointer;
+    padding: 2px;
+    margin-bottom: 25px;
+    color: #09d4d9;
+  }
+  #portfolio h1 {
+    letter-spacing: 10px;
+    max-width: 260px;
+  }
+
+  #about h1,
+  #contact h1 {
+    letter-spacing: 10px;
+    line-height: 40px;
+    padding-top: 10px;
+    margin-top: 10vh;
+    font-size: 6vh;
+    color: #09d4d9;
+    font-family: 'changa';
+  }
 }

@@ -1,168 +1,247 @@
+<!-- 
+
+  Hello,
+  Thank you for inspecting my code.
+
+  Kris Cartmell
+  Full Stack Developer
+  Portfolio Version: 1.0
+  Created: December 12, 2021
+  Languages: HTML, CSS, MySQL, PHP, Javascript
+  Frameworks: Bootstrap, jQuery
+
+
+ -->
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-</head>
-<body>
-	<script>
-		// let counter = class makeCounter {
-		// 	constructor(i){
-		// 		if(i = ""){
-		// 			this.val = 0;
-		// 		}
-		// 		else{
-		// 			this.val = i;
-		// 		}
-		// 	}
-
-		// 	increment (){
-		// 		this.val = this.val++
-		// 		console.log(this.val);
-		// 		return this.val
-		// 	}
-		// 	decrement(){
-		// 		this.val = this.val--;
-		// 		console.log(this.val);
-		// 		return this.val
-		// 	}
-		// }
-		// counter.increment();
-		// console.log(this.val)
-		
-		// class makeCounter {
-		// 	constructor(i){
-		// 		if (typeof i === 'undefined' || i === null){
-		// 			i = 0;
-		// 			this.val = i;
-		// 		}
-		// 		else
-		// 		{
-		// 			this.val = i;
-		// 		}
-				
-		// 		this.value(this.val);
-		// 	};
-		// 	value() {				
-		// 		 return this.val;
-		// 	}
-		//  	up () {
-		// 		this.val = ++this.val;
-		// 		return this.value(this.val);
-		// 	};
-		// 	down (){
-		// 		this.val = --this.val;
-		// 		return this.value(this.val)
-		// 	};
-		// }
-		
-		// var counter = new makeCounter();
-		// console.log(counter);
-
-		// var counter2 = new makeCounter(4);
-		// console.log (counter2);
-		
-		// console.log(counter2.up())
-		// console.log(counter2.down())
-		// console.log(counter2.up())
-
-		// new stuff updates the array
-// Array increase / decrease based off if even or odd
-// Using my IDE to test script. --
-
-
-//create function to handle request
-
-// new stuff updates the array
-function newStuff(array, n){
-    var i;
-    for (i =0; i < n; i++){
-        //writes new value for loop
-        document.write(array[i] + " ");
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kris Cartmell | Full Stack Web Developer</title>
+  <!-- CSS Information -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css" />
+  <script src="https://kit.fontawesome.com/c5608c8cee.js" crossorigin="anonymous"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JWKX9J2908"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
     }
-}
+    gtag("js", new Date());
+    gtag("config", "G-JWKX9J2908");
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="./files/style.css" />
+</head>
 
-// // do stuff handles the array
-// function doStuff(array, n){
-//     var i;
-//     //start loop for how many array values we have
-//     for(i = 0; i < n; i++){
-//         //if array[value] is not divisable by 2, remove 1 to its value
-//         if (array[i] % 2 ){
-//             array[i]--;
-//         }
-//         else
-//         {
-//             // array is not divisible by 2, so its even. add 1 from value
-//             array[i]++;
-//         }
-//         newStuff(array, n);
-//     }// end loop
-// }
-
-// var array = [10,7, 14, 5, 8, 1];
-// var n = array.length;
-// doStuff(array, n);
-// console.log(array)
-// doStuff(array, n);
-// console.log(array)
-
-// Create out function 'minArgs'
-
-function minArgs(val1, val2){
-	a_val1 = val1;
-	a_val2 = val2;
-	if(a_val1 = Array.isArray(val1)){
-		a_val1 = val1;
-		console.log(a_val1)
-		var i;
-		var n = a_val1.length;
-		for(i = 0; i < n; i++){
-
-	        var check = a_val1[i];
-	        if(a_val1[i] > check){
-	            check = a_val1[i];
-	        }
-			console.log(check)
-			val1 = check;
-			return val1;
-	    }
-	}
-	else if (a_val2 = Array.isArray(val2)){
-		a_val2 = val2;
-		// console.log(a_val2)
-		var i;
-		var check;
-		var n = a_val2.length;
-		
-		for(i = 0; a_val2[i] < n; i++){
-			console.log(a_val2[i])
-	    //    check = a_val2[i];
-		// 	// console.log(check)
-	    //     if(a_val1[i] > check){
-	    //         check = a_val1[i];
-		// 		// console.log(check)
-	    //     }
-		// 	val2 = check2;
-		// 	return val2;
-	    }
-	}
-    if (val1 > val2){
-		return val1;
-	}
-	else
-	{
-		return val2;
-	}
-}
-	var foo = minArgs(20, 100);
-	console.log(foo);
-
-	var duck = [5,40,-6,800];
-	var foo = minArgs(8, duck)
-	// console.log(foo)
-	</script>
+<body>
+  <header class="container-fluid">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+      <div>
+        <a class="navbar-brand" href="#"><img src="./files/images/icon.png" class="img-fluid" style="width: 38px;"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mobile">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse ms-auto order-3" id="mobile">
+          <div class="navbar-nav ms-auto text-center">
+            <a class="nav-link" href="#portfolio">Portfolio</a>
+            <a class="nav-link" href="#about">About</a>
+            <a class="nav-link" href="#contact">Contact</a>
+            <a class="nav-link" href="#">Resume</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main class="container-fluid">
+    <section id="hero">
+      <div class="hero"></div>
+      <div class='callToAction'>
+        <h2>Hello,</h2>
+        <h1>I am Kris Cartmell</h1>
+        <h2>a full stack developer</h2>
+        <div class="text-end"><button id="cta" class='btn'>Learn More</button></div>
+      </div>
+    </section>
+    <section id="portfolio">
+      <div class="container">
+        <h1>Portfolio
+          <hr>
+        </h1>
+        <p>Here are a few of my projects, feel free to view them and look at the source code</p>
+        <!-- Portfolio #1 START-->
+        <div class="row d-md-flex justify-content-center align-items-center my-5">
+          <div class="col-md">
+            <div class="portfolio-item position-relative">
+              <h3>Admin Dashboard</h3>
+              <p class="p-content">This project is the dashboard I currently use for my own freelance website. It
+                follows all aspects of
+                CRUD, has a time management system, invoicing system and client information</p>
+              <div class="languages">
+                <ul>
+                  <li>Bootstrap</li>
+                  <li>jQuery</li>
+                  <li>PHP</li>
+                  <li>MySQL</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md portfolio-img position-relative">
+            <img src="./files/portfolio/admin-panel.png" class="img-fluid" alt="Admin Panel">
+            <div class="portfolio-links">
+              <ul>
+                <li><a href='http://www.debuggingbytes.com' target="_blank"><i class="fa-solid fa-link fa-xl"
+                      title="Go to website"></i></a></li>
+                <li><a href='#'><i class="fa-solid fa-code fa-xl" title="View Code"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- Portfolio #1 END -->
+        <!-- Portfolio #2 START-->
+        <div class="row d-md-flex justify-content-center align-items-center my-5">
+          <div class="col-md">
+            <div class="portfolio-item position-relative">
+              <h3>DebuggingBytes</h3>
+              <p class="p-content">My freelance website to designed to provide affordable web packages to potential
+                clients. Website has contact form with spam honey pot.</p>
+              <div class="languages">
+                <ul>
+                  <li>Bootstrap</li>
+                  <li>jQuery</li>
+                  <li>aJax</li>
+                  <li>PHP</li>
+                  <li>MySQL</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md portfolio-img position-relative">
+            <img src="files/portfolio/debuggingbytes.png" class="img-fluid" alt="DebuggingBytes">
+            <div class="portfolio-links">
+              <ul>
+                <li><a href='http://www.debuggingbytes.com' target="_blank"><i class="fa-solid fa-link fa-xl"
+                      title="Go to website"></i></a></li>
+                <li><a href='#'><i class="fa-solid fa-code fa-xl" title="View Code"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- Portfolio #2 END -->
+        <!-- Portfolio #3 START-->
+        <div class="row d-md-flex justify-content-center align-items-center my-5">
+          <div class="col-md">
+            <div class="portfolio-item position-relative">
+              <h3>Alberta Crane Service Ltd.</h3>
+              <p class="p-content">This project was created for a crane sales broker. Simple design which show cased
+                which equipment was
+                available, pulling information from CraneNetwork..</p>
+              <div class="languages">
+                <ul>
+                  <li>Bootstrap</li>
+                  <li>jQuery</li>
+                  <li>aJax</li>
+                  <li>PHP</li>
+                  <li>MySQL</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md portfolio-img position-relative">
+            <img src="files/portfolio/alberta-crane-service-ltd.png" class="img-fluid" alt="Alberta Crane Service Ltd">
+            <div class="portfolio-links">
+              <ul>
+                <li><a href='http://www.albertacraneservice.com' target="_blank"><i class="fa-solid fa-link fa-xl"
+                      title="Go to website"></i></a></li>
+                <li><a href='#'><i class="fa-solid fa-code fa-xl" title="View Code"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- Portfolio #3 END -->
+      </div>
+    </section>
+    <section id="about">
+      <div class="container">
+        <h1>About Me
+          <hr>
+        </h1>
+        <p>I am a full stack developer with a passion of learning new languages and thinking outside the box. I am
+          motivated and self starting, and work well as a team or individual. Currently I am learning the <span
+            class='color'>Tailwind</span> and <span class='color'>Laravel</span> frameworks.</p>
+        <h3>Technical Skills</h3>
+        <div class="languages">
+          <ul>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>Javascript</li>
+            <li>jQuery</li>
+            <li>ReactJS</li>
+            <li>NodeJS</li>
+            <li>PHP</li>
+            <li>MySQL</li>
+            <li>MongoDB</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <div class="container">
+        <h1>Contact
+          <hr>
+        </h1>
+        <p class="p-2">You've made it this far, why don't you say hello and I'll get back to you as soon as possible.
+        </p>
+        <div class="col-md">
+          <div class="form-body">
+            <form>
+              <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="floatingInput" placeholder="John Smith">
+                <label for="floatingInput">Full Name</label>
+              </div>
+              <div class="form-floating">
+                <input type="email" class="form-control" id="floatingEmail" placeholder="name@example.com">
+                <label for="floatingEmail">Email</label>
+              </div>
+              <div class="form-floating">
+                <textarea style="height: 150px" class="form-control" placeholder="Leave a comment here"
+                  id="floatingTextarea"></textarea>
+                <label for="floatingTextarea">Your Message</label>
+              </div>
+              <div class="form-floating text-center">
+                <button type='submit' class='btn'>Send <i class="fa-solid fa-paper-plane"></i></button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="container">
+      <div class="row mt-5">
+        <p class="text-center">Designed and Built by Kris Cartmell</p>
+        <span class="text-center" id='year'></span>
+      </div>
+    </div>
+  </footer>
+  <div class="social-links">
+    <a href="https://www.linkedin.com/in/kris-cartmell/" target="_blank"><i class="fab fa-linkedin fa-2xl"></i></a>
+    <a href="https://github.com/debuggingbytes" target="_blank"><i class="fab fa-github fa-2xl"></i></a>
+    <div class="text-center">
+      <hr style="width: 3px; height: 100px; display: inline-block; background-color:#09d4d9;">
+    </div>
+  </div>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="files/scripts.js" defer></script>
+
 </html>

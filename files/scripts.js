@@ -110,3 +110,11 @@ function changeBg() {
 }
 
 // setInterval(() => { changeBg() }, 10000);
+
+//Call To Action
+const cta = document.querySelector("#cta");
+
+// Footer information
+const date = new Date().getFullYear();
+const footer = document.querySelector("#year");
+footer.innerText = date;
