@@ -24,8 +24,6 @@ $("#callOut").click(function () {
   scrollHero();
   $("#showLandingLi").removeClass("d-none ");
 })
-//ToDo: Add Tool tips to courses I am learning -- [ data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top" ]
-
 
 
 // IF ELEMENT IS SCROLLED INTO VIEW
@@ -109,10 +107,112 @@ function changeBg() {
   }
 }
 
-// setInterval(() => { changeBg() }, 10000);
-
 //Call To Action
 const cta = document.querySelector("#cta");
+
+cta.addEventListener("click", shrinkButton);
+let redirect = false;
+function shrinkButton() {
+  cta.innerText = "LETS GO!";
+  $('#cta').animate({
+    width: 0,
+    height: 0,
+    opacity: 0,
+    background: "linear-gradient(to right, #f12711, #f5af19)",
+
+  }, 900, "linear");
+  setTimeout(() => {
+    cta.innerText = "";
+  }, 550);
+  shrinkage();
+}
+
+// Animate in items
+$(window).scroll(function () {
+  $('.fadeIn').each(function (i) {
+
+    var top_of_element = $(this).offset().top;
+    var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+    if (bottom_of_window > top_of_element) {
+      $(this).animate({ 'opacity': '1' }, 1500);
+
+    }
+
+  });
+});
+
+
+
+
+async function shrinkage() {
+  let myPromise = new Promise(function (resolve) {
+    setTimeout(function () {
+      resolve(redirect = true);
+    }, 1300);
+  });
+  await myPromise;
+  if (redirect) {
+    window.location = "#contact"
+    setTimeout(() => {
+      $("#cta").animate({
+        width: "50%",
+        height: "100%",
+        opacity: 1
+      }, 300)
+    })
+    cta.innerText = "Learn More";
+  } else {
+    return false;
+  }
+  console.log(myPromise)
+}
+
+// Form Control
+$('form').on('submit', function (e) {
+  const name = document.querySelector("input[name='fName']");
+  const email = document.querySelector("input[name='email']");
+  const message = document.querySelector("textarea[name='message']");
+  console.log(name.value + " " + email.value + "  " + message.value);
+  e.preventDefault();
+  $.ajax({
+    url: './utils/sendMail.php',
+    type: 'POST',
+    data: $('form').serialize(),
+    success: function () {
+      $("#contact_form").animate({
+        opacity: 0
+      }, 500);
+      setTimeout(() => {
+        $('#success').slideToggle(900, function () {
+          $('#message').fadeIn(200, () => {
+            $('#message').append("Successfully sent!")
+          })
+          setTimeout(() => {
+            $('#success').animate({
+              opacity: 0,
+            }, 500)
+          }, 3000)
+
+        });
+      }, 600)
+
+      setTimeout(() => {
+        name.value = "";
+        email.value = "";
+        message.value = "";
+        $('#success').slideToggle(1000)
+        $("#contact_form").animate({
+          opacity: 1
+        }, 1100);
+
+      }, 4000)
+
+
+
+    }
+  });
+});
 
 // Footer information
 const date = new Date().getFullYear();

@@ -112,13 +112,14 @@ p {
   background: #ff7824;
   padding: 13px;
   color: #141e30; /* fallback for old browsers */
-  transition: ease-in-out 0.5s;
+  transition: all 0.5s linear;
   letter-spacing: 3px;
 }
 .callToAction button:hover {
-  transition: ease-in-out 0.5s;
   width: 150px;
-  background: #fd6100;
+  background: #f12711; /* fallback for old browsers */
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  transition: all 0.5s linear;
   color: #e7e7e7; /* fallback for old browsers */
 }
 
@@ -284,7 +285,7 @@ p {
 }
 
 #contact {
-  min-height: 30vh;
+  min-height: 50vh;
 }
 
 form {
@@ -359,4 +360,16 @@ footer {
     color: #09d4d9;
     font-family: 'changa';
   }
+}
+
+#success {
+  color: #fff;
+  display: none;
+  width: 30%;
+  margin: 0 auto;
+  padding: 5px;
+}
+
+.fadeIn {
+  opacity: 0;
 }
